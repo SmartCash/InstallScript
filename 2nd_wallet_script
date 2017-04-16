@@ -1,0 +1,5 @@
+@echo off
+set /p appdir= Where is your smartcash-qt.exe installed? (Default is C:/Program Files/Dash) 
+set /p datadir= Where is the data directory?  (Default is C:/Users/User/AppData/Roaming/Dash)
+set /p wallet= What is the wallet name?  (Default is wallet.dat)
+echo "%appdir%\smartcash-qt.exe" -datadir="%datadir%" -wallet=%wallet% -windowtitle=%wallet% > %wallet%.bat
