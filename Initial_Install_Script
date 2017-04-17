@@ -1,9 +1,0 @@
-@echo off
-set /p appdir= Where do you want to install SmartCash? (Default is C:/SmartCash)
-mkdir "%appdir%"
-mkdir "%appdir%/Install"
-mkdir "%appdir%/Data"
-mkdir "%appdir%/Config"
-set /p wallet= What do you want to call your wallet?  (Default is wallet.dat)
-echo "%appdir%/Install/smartcash-qt.exe" -datadir="%appdir%/Data" -wallet=%wallet% -windowtitle=%wallet% > "%appdir%/Install/%wallet%.bat"
-echo "%appdir%/Install/smartcash-qt.exe" -datadir="%appdir%/Data" -wallet=%wallet% -windowtitle=%wallet% > "~/Desktop/%wallet%.bat"
